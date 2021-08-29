@@ -14,6 +14,27 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+## Firebase Setup for the project:
+           Before any Firebase services can be used, you must first install the firebase_core plugin, which is responsible for connecting your application to Firebase.       Add the plugin to your pubspec.yaml file:
+           dependencies:
+               flutter:
+                  sdk: flutter
+                  firebase_core: "^1.5.0"
+    Install the plugin by running the following command from the project root:
+           $ flutter pub get
+#### Platform Setup
+Check the documentations of the platform and follow accordingly.The links are given below 
+    1.Android:https://firebase.flutter.dev/docs/installation/android
+    2.iOS:https://firebase.flutter.dev/docs/installation/ios
+    3.macOS:https://firebase.flutter.dev/docs/installation/macos
+    4.Web:https://firebase.flutter.dev/docs/installation/web
+#### Initializing FlutterFire
+
+     Before any of the Firebase services can be used, FlutterFire needs to be initialized (you can think of this process as FlutterFire "bootstrapping" itself). The          initialization step is asynchronous, meaning you'll need to prevent any FlutterFire related usage until the initialization is completed.
+
+      To initialize FlutterFire, call the initializeApp method on the Firebase class:
+                  await Firebase.initializeApp();
+      The method is asynchronous and returns a Future, so you need to ensure it has completed before displaying your main application.
 ## Packages Used
 ### 1.cloud_firestore:
       A Flutter plugin to use the Cloud Firestore API.\
@@ -43,4 +64,4 @@ samples, guidance on mobile development, and a full API reference.
       A Flutter plugin to use the Firebase Cloud Messaging API.
       To start using the Cloud Messaging package within your project, import it at the top of your project files:
           import 'package:firebase_messaging/firebase_messaging.dart';
-       
+

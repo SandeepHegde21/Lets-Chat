@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 Before starting make sure to go through the official documentation of firebase to setup and update the rules accordingly
       Documentation to go through:https://firebase.flutter.dev/docs/overview
 
-         Before any Firebase services can be used, you must first install the firebase_core plugin, which is responsible for connecting your application to Firebase.         Add the plugin to your pubspec.yaml file:
+         Before any Firebase services can be used, you must first install the firebase_core plugin, which is responsible for connecting your application to Firebase.   Add the plugin to your pubspec.yaml file:
            dependencies:
                flutter:
                   sdk: flutter

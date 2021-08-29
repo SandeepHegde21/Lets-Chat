@@ -39,6 +39,7 @@ Check the documentations of the platform and follow accordingly.The links are gi
                   await Firebase.initializeApp();
       The method is asynchronous and returns a Future, so you need to ensure it has completed before displaying your main application.
 ## Packages Used
+To add packages into  your project,go to pubspec.yaml file and  add the package in the dependency sections and run "flutter pub get"  
 ### 1.cloud_firestore:
       A Flutter plugin to use the Cloud Firestore API.\
       To start using the Cloud Firestore package within your project, import it at the top of your project files:

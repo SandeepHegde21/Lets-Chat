@@ -15,7 +15,10 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 ## Firebase Setup for the project:
-           Before any Firebase services can be used, you must first install the firebase_core plugin, which is responsible for connecting your application to Firebase.       Add the plugin to your pubspec.yaml file:
+Before starting make sure to go through the official documentation of firebase to setup and update the rules accordingly
+      Documentation to go through:https://firebase.flutter.dev/docs/overview
+
+         Before any Firebase services can be used, you must first install the firebase_core plugin, which is responsible for connecting your application to Firebase.         Add the plugin to your pubspec.yaml file:
            dependencies:
                flutter:
                   sdk: flutter
@@ -64,4 +67,7 @@ Check the documentations of the platform and follow accordingly.The links are gi
       A Flutter plugin to use the Firebase Cloud Messaging API.
       To start using the Cloud Messaging package within your project, import it at the top of your project files:
           import 'package:firebase_messaging/firebase_messaging.dart';
+          
+ ## Run the project
+        $  flutter run
 
